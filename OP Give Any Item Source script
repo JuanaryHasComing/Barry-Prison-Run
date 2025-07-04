@@ -1,0 +1,64 @@
+-- Credit: JuanaryHasComing on Roblox. Youtube: @GiaMinhNguyenDinh pls sub i give everyone this full source
+
+local toolNames = {
+    -- Batons
+    "BaconBaton",
+    "ClassicBaton",
+    "BasicBaton",
+    "BoltBaton",
+    "FairyBaton",
+    "FlameBaton",
+    "GymBaton",
+    "IceBaton",
+    "JusticeBaton",
+    "SciBaton",
+
+    -- Gamepass Item
+    "JetPack",
+    "Grapple",
+    "SpeedCola",
+    "GravityCola",
+    "Taser",
+    "GodBlaster",
+    "Telekineses",
+    "GodMode",
+    "SkiBarry",
+    "SuperPunch",
+    "IceBow",
+    "PlayerVacuum",
+    "ClassicBoom",
+    "SuperFoodZooka",
+    "DohZooka",
+    "FlyingCarpet",
+    "GhostMode",
+    "OfficerNugget",
+    "MonsterTrolley",
+    "BlackHole",
+    "ChickenMorph",
+
+    -- Copcoins, Event, Regular Item
+    "ToiletPaper",
+    "Box",
+    "FireExtinguisher",
+    "Katana",
+    "WaterBalloon",
+    "FoodZooka",
+    "Segway",
+    "Pillow",
+    "PaintCan",
+    "FlameSword",
+    "Sled",
+    "Wrapper5000",
+    "SnowShot",
+    "Spanner",
+    "RayGun",
+    "Shovel",
+    "Spanner",
+    "RayGun"
+}
+
+local remote = game:GetService("ReplicatedStorage").ShopAssetsFolder.AssetRemotes.SendTool
+
+for _, toolName in ipairs(toolNames) do
+    remote:FireServer(toolName, true, false)
+end
